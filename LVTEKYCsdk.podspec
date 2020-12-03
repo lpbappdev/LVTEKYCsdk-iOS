@@ -31,12 +31,13 @@ The ekyc platform, developed by LVT, makes it easy to embeded OCR and face live 
   s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
-  s.source_files = 'LVTEKYCsdk/Classes/**/LVTeKYC.framework/Headers/*.h'
-  s.public_header_files = 'LVTEKYCsdk/Classes/**/LVTeKYC.framework/Headers/*.h'
+  #s.source_files = 'LVTEKYCsdk/Classes/**/LVTeKYC.framework/Headers/*.h'
+  #s.public_header_files = 'LVTEKYCsdk/Classes/**/LVTeKYC.framework/Headers/*.h'
 
   s.frameworks = 'UIKit', 'AVFoundation'
 
-  s.vendored_frameworks = 'LVTEKYCsdk/Classes/**/LVTeKYC.framework'
+  s.vendored_frameworks = 'LVTEKYCsdk/Classes/**/LVTeKYC.xcframework'
+  
   s.dependency 'Firebase/MLVision'
   s.dependency 'Firebase/MLVisionFaceModel'
 

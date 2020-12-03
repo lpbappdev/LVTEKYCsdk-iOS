@@ -1,0 +1,20 @@
+framework module LVTeKYC {
+  umbrella header "LVTeKYC.h"
+
+  export *
+  
+  explicit module Private {
+    header "NSData+RSAKey.h"
+    header "LHGCryptoHelper.h"
+    header "LHGKeychainHelper.h"
+    header "LHGKeychainHelper+RSA.h"
+    header "LHGRSAHelper.h"
+    header "BlockBasedSelector.h"
+    export *
+  }
+}
+
+module LVTeKYC.Swift {
+    header "LVTeKYC-Swift.h"
+    requires objc
+}
